@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TikTok Downloader Pro - Zifer API</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Radhani&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Meta -->
+    <meta name="description" content="Download video dan audio TikTok tanpa watermark dengan cepat dan mudah">
+    <meta name="theme-color" content="#1a3a6b">
+</head>
+<body>
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <div class="loader-ring"></div>
+            <i class="fab fa-tiktok loader-icon"></i>
+        </div>
+    </div>
+
+    <!-- ===== BACKGROUND ANIMATION ===== -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <!-- ===== PARTICLES ===== -->
+    <div id="particles"></div>
+
+    <!-- ===== MAIN CONTAINER ===== -->
+    <div class="container" id="mainContainer">
+        
+        <!-- ============================================ -->
+        <!-- ===== WELCOME SECTION ===== -->
+        <!-- ============================================ -->
+        <div id="welcomeSection" class="welcome-section">
+            
+            <!-- ===== HEADER ===== -->
+            <header class="header">
+                <div class="logo-wrapper">
+                    <div class="logo-icon">
+                        <i class="fab fa-tiktok"></i>
+                        <div class="logo-pulse"></div>
+                    </div>
+                    <div class="logo-text">
+                        <h1>TikTok <span>Downloader</span></h1>
+                        <p class="subtitle">Download Tanpa Watermark • Cepat • Gratis</p>
+                    </div>
+                </div>
+                <div class="header-badge">
+                    <span class="badge"><i class="fas fa-bolt"></i> Pro</span>
+                    <span class="badge version"><i class="fas fa-code-branch"></i> v1.0</span>
+                </div>
+            </header>
+
+            <!-- ===== HERO SECTION ===== -->
+            <div class="hero-section">
+                <div class="hero-badge">
+                    <i class="fas fa-bolt"></i>
+                    <span>Latest Release • v1.0</span>
+                </div>
+                
+                <div class="hero-icon">
+                    <i class="fab fa-tiktok"></i>
+                    <div class="icon-pulse"></div>
+                </div>
+                
+                <h1 class="hero-title">
+                    The Ultimate TikTok<br>
+                    <span>Downloader</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Download TikTok videos and audio without watermark. Fast, free, and unlimited.
+                </p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-video"></i>
+                        <span>HD Video</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-music"></i>
+                        <span>MP3 Audio</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-water"></i>
+                        <span>No Watermark</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-bolt"></i>
+                        <span>Super Fast</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== WHAT IS THIS ===== -->
+            <section class="info-section">
+                <div class="section-header">
+                    <i class="fas fa-info-circle"></i>
+                    <h2>What is This?</h2>
+                </div>
+                
+                <div class="info-content">
+                    <p>
+                        <strong>TikTok Downloader Pro</strong> is a powerful web-based tool that allows you to 
+                        download TikTok videos and audio without any watermark. Simply paste the TikTok video URL, 
+                        and our advanced API will fetch the highest quality media for you.
+                    </p>
+                    
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <i class="fas fa-download"></i>
+                            <h4>Free & Unlimited</h4>
+                            <p>Download unlimited videos and audio without any cost</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>No Watermark</h4>
+                            <p>Get clean, watermark-free videos directly from TikTok</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-code"></i>
+                            <h4>API Ready</h4>
+                            <p>Use our API to integrate TikTok downloading into your apps</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Super Fast</h4>
+                            <p>Lightning-fast processing with instant downloads</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== HOW TO USE ===== -->
+            <section class="how-to-section">
+                <div class="section-header">
+                    <i class="fas fa-play-circle"></i>
+                    <h2>How to Use</h2>
+                </div>
+                
+                <div class="steps-container">
+                    <div class="step-card">
+                        <div class="step-number">01</div>
+                        <div class="step-icon"><i class="fas fa-copy"></i></div>
+                        <h4>Copy URL</h4>
+                        <p>Open TikTok app, find the video you want, and copy the video URL</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">02</div>
+                        <div class="step-icon"><i class="fas fa-paste"></i></div>
+                        <h4>Paste URL</h4>
+                        <p>Paste the copied URL into the input field below</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">03</div>
+                        <div class="step-icon"><i class="fas fa-arrow-right"></i></div>
+                        <h4>Process</h4>
+                        <p>Click the "Proses" button and wait for the magic to happen</p>
+                    </div>
+                    
+                    <div class="step-card">
+                        <div class="step-number">04</div>
+                        <div class="step-icon"><i class="fas fa-download"></i></div>
+                        <h4>Download</h4>
+                        <p>Choose between video (MP4) or audio (MP3) and download instantly</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== API FEATURES ===== -->
+            <section class="api-features-section">
+                <div class="section-header">
+                    <i class="fas fa-code"></i>
+                    <h2>✦ API Features</h2>
+                </div>
+                
+                <div class="api-features-grid">
+                    <div class="api-feature-card">
+                        <i class="fas fa-globe"></i>
+                        <h4>REST API</h4>
+                        <p>Simple REST API with JSON responses</p>
+                        <code>GET /api/tiktok?url={URL}</code>
+                    </div>
+                    <div class="api-feature-card">
+                        <i class="fas fa-language"></i>
+                        <h4>Multi Language</h4>
+                        <p>Support for JavaScript, Python, Dart, PHP, Java, Go, and cURL</p>
+                    </div>
+                    <div class="api-feature-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Fast Response</h4>
+                        <p>Average response time under 3 seconds</p>
+                    </div>
+                    <div class="api-feature-card">
+                        <i class="fas fa-lock"></i>
+                        <h4>Secure</h4>
+                        <p>HTTPS encrypted connections for your privacy</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== DEVELOPER SECTION ===== -->
+            <section class="developer-section">
+                <div class="section-header">
+                    <i class="fas fa-user-cog"></i>
+                    <h2>Developer</h2>
+                </div>
+                
+                <div class="developer-card">
+                    <div class="developer-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="developer-info">
+                        <h3>Zifer Team</h3>
+                        <p class="developer-role">✨ Full Stack Developer & API Architect</p>
+                        <p class="developer-desc">
+                            Passionate about building powerful tools that make content creation 
+                            easier. This TikTok Downloader is built with ❤️ using modern 
+                            technologies including Node.js, Express, and Vercel.
+                        </p>
+                        <div class="developer-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== CTA TO DOWNLOADER ===== -->
+            <div class="cta-section">
+                <button class="cta-button" id="goToDownloader">
+                    <i class="fas fa-arrow-right"></i>
+                    Start Downloading Now
+                    <i class="fas fa-arrow-right arrow-second"></i>
+                </button>
+                <p class="cta-sub">🚀 Join thousands of users downloading TikTok content daily</p>
+            </div>
+
+            <!-- ===== FOOTER ===== -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok Downloader Pro</span>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#"><i class="fas fa-shield-alt"></i> Privacy</a>
+                        <a href="#"><i class="fas fa-file-alt"></i> Terms</a>
+                        <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+                        <a href="#"><i class="fas fa-star"></i> GitHub</a>
+                    </div>
+                    <div class="footer-version">
+                        <i class="fas fa-code-branch"></i> v3.0.0
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 TikTok Downloader Pro. Made with <i class="fas fa-heart" style="color: #ff0050;"></i> by Zifer Team</p>
+                </div>
+            </footer>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- ===== DOWNLOADER SECTION ===== -->
+        <!-- ============================================ -->
+        <div id="downloaderSection" class="downloader-section" style="display: none;">
+            
+            <!-- ===== HEADER ===== -->
+            <header class="header">
+                <div class="logo-wrapper">
+                    <div class="logo-icon">
+                        <i class="fab fa-tiktok"></i>
+                        <div class="logo-pulse"></div>
+                    </div>
+                    <div class="logo-text">
+                        <h1>TikTok <span>Downloader</span></h1>
+                        <p class="subtitle">Download Tanpa Watermark • Cepat • Gratis</p>
+                    </div>
+                </div>
+                <div class="header-badge">
+                    <span class="badge"><i class="fas fa-bolt"></i> Pro</span>
+                    <span class="badge version"><i class="fas fa-code-branch"></i> v3.0</span>
+                </div>
+                <div class="header-nav">
+                    <button class="nav-back" id="backToWelcome" title="Back to Home">
+                        <i class="fas fa-home"></i>
+                    </button>
+                </div>
+            </header>
+
+            <!-- ===== FEATURES BAR ===== -->
+            <div class="features-bar">
+                <div class="feature-item" data-tooltip="Download video kualitas HD">
+                    <i class="fas fa-video"></i>
+                    <span>Video HD</span>
+                </div>
+                <div class="feature-item" data-tooltip="Ekstrak audio menjadi MP3">
+                    <i class="fas fa-music"></i>
+                    <span>Audio MP3</span>
+                </div>
+                <div class="feature-item" data-tooltip="Tanpa watermark TikTok">
+                    <i class="fas fa-water"></i>
+                    <span>No Watermark</span>
+                </div>
+                <div class="feature-item" data-tooltip="Proses super cepat">
+                    <i class="fas fa-bolt"></i>
+                    <span>Super Cepat</span>
+                </div>
+            </div>
+
+            <!-- ===== SEARCH SECTION ===== -->
+            <div class="search-section">
+                <div class="input-wrapper">
+                    <div class="input-group">
+                        <i class="fas fa-link input-icon"></i>
+                        <input 
+                            type="url" 
+                            id="urlInput" 
+                            placeholder="https://vt.tiktok.com/ZSCUBjoFb" 
+                            autocomplete="off"
+                            spellcheck="false"
+                        >
+                        <button id="downloadBtn" class="btn-primary">
+                            <i class="fas fa-arrow-right"></i>
+                            <span>Proses</span>
+                        </button>
+                    </div>
+                    <div class="input-tools">
+                        <button class="tool-btn" id="pasteBtn" title="Paste dari clipboard">
+                            <i class="fas fa-paste"></i>
+                        </button>
+                        <button class="tool-btn" id="clearBtn" title="Clear input">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- ===== MESSAGES ===== -->
+                <div id="errorMessage" class="message error hide">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span id="errorText"></span>
+                    <button class="message-close"><i class="fas fa-times"></i></button>
+                </div>
+                <div id="successMessage" class="message success hide">
+                    <i class="fas fa-check-circle"></i>
+                    <span id="successText"></span>
+                    <button class="message-close"><i class="fas fa-times"></i></button>
+                </div>
+
+                <!-- ===== PROGRESS BAR ===== -->
+                <div id="progressContainer" class="progress-container hide">
+                    <div class="progress-track">
+                        <div class="progress-bar" id="progressBar"></div>
+                        <div class="progress-glow"></div>
+                    </div>
+                    <div class="progress-info">
+                        <span id="progressText" class="progress-text">Memproses...</span>
+                        <span id="progressPercent" class="progress-percent">0%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== RESULT SECTION ===== -->
+            <div id="resultSection" class="result-section" style="display: none;">
+                
+                <!-- ===== VIDEO INFO ===== -->
+                <div id="videoInfo" class="video-info" style="display: none;">
+                    <div class="video-meta">
+                        <div class="video-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="video-details">
+                            <h3 id="videoTitle" class="video-title">Judul Video</h3>
+                            <p id="videoAuthor" class="video-author">@username</p>
+                        </div>
+                        <div class="video-stats">
+                            <span><i class="fas fa-heart"></i> <span id="likeCount">0</span></span>
+                            <span><i class="fas fa-comment"></i> <span id="commentCount">0</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== VIDEO PREVIEW ===== -->
+                <div class="video-preview-wrapper">
+                    <div class="video-preview" id="videoPreview">
+                        <div class="video-placeholder">
+                            <i class="fas fa-play-circle"></i>
+                            <p>Preview Video</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ===== DOWNLOAD BUTTONS ===== -->
+                <div class="download-actions">
+                    <button id="downloadVideo" class="btn-download video">
+                        <i class="fas fa-video"></i>
+                        <div class="btn-content">
+                            <span class="btn-title">Download Video</span>
+                            <span class="btn-sub">MP4 • HD Quality</span>
+                        </div>
+                    </button>
+                    <button id="downloadAudio" class="btn-download audio">
+                        <i class="fas fa-music"></i>
+                        <div class="btn-content">
+                            <span class="btn-title">Download Audio</span>
+                            <span class="btn-sub">MP3 • High Quality</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <!-- ===== API DOCUMENTATION ===== -->
+            <section class="api-section">
+                <div class="api-header">
+                    <h2><i class="fas fa-code"></i> ✦ API Documentation</h2>
+                    <button class="api-toggle" id="apiToggle">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+                
+                <div class="api-body" id="apiBody">
+                    <div class="api-info">
+                        <p><i class="fas fa-globe"></i> <strong>Base URL:</strong> <code>https://ziferr-tiktok-api.vercel.app</code></p>
+                        <p><i class="fas fa-key"></i> <strong>Endpoint:</strong> <code>/api/tiktok?url={URL_TIKTOK}</code></p>
+                        <p><i class="fas fa-method"></i> <strong>Method:</strong> <code>GET</code></p>
+                    </div>
+
+                    <div class="api-tabs">
+                        <button class="api-tab active" data-tab="javascript"><i class="fab fa-js"></i> JavaScript</button>
+                        <button class="api-tab" data-tab="python"><i class="fab fa-python"></i> Python</button>
+                        <button class="api-tab" data-tab="dart"><i class="fab fa-dart"></i> Dart</button>
+                        <button class="api-tab" data-tab="curl"><i class="fas fa-terminal"></i> cURL</button>
+                        <button class="api-tab" data-tab="php"><i class="fab fa-php"></i> PHP</button>
+                        <button class="api-tab" data-tab="java"><i class="fab fa-java"></i> Java</button>
+                        <button class="api-tab" data-tab="go"><i class="fab fa-golang"></i> Go</button>
+                    </div>
+
+                    <div class="api-content">
+                        <!-- JavaScript -->
+                        <div id="javascript" class="api-code active">
+                            <div class="code-header">
+                                <span class="code-lang">JavaScript</span>
+                                <button class="copy-code" data-target="js-code"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <pre><code id="js-code">
+// JavaScript - Install dengan npm atau CDN
+// npm install axios
+
+const axios = require('axios');
+
+async function downloadTikTok(url) {
+    try {
+        const response = await axios.get(
+            'https://ziferr-tiktok-api.vercel.app/api/tiktok',
+            { params: { url } }
+        );
+        
+        const data = response.data;
+        if (data.success) {
+            console.log('✅ Video:', data.video);
+            console.log('✅ Audio:', data.audio);
+            console.log('✅ Caption:', data.caption);
+            console.log('✅ Author:', data.author);
+            return data;
+        }
+    } catch (error) {
+        console.error('❌ Error:', error.message);
+    }
+}
+
+// Penggunaan
+downloadTikTok('https://vt.tiktok.com/ZSCUBjoFb');
+                            </code></pre>
+                        </div>
+
+                        <!-- Python -->
+                        <div id="python" class="api-code">
+                            <div class="code-header">
+                                <span class="code-lang">Python</span>
+                                <button class="copy-code" data-target="py-code"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <pre><code id="py-code">
+# Python - Install dengan pip
+# pip install requests
+
+import requests
+
+def download_tiktok(url):
+    try:
+        response = requests.get(
+            'https://ziferr-tiktok-api.vercel.app/api/tiktok',
+            params={'url': url}
+        )
+        data = response.json()
+        
+        if data.get('success'):
+            print(f"✅ Video: {data['video']}")
+            print(f"✅ Audio: {data['audio']}")
+            print(f"✅ Caption: {data['caption']}")
+            print(f"✅ Author: {data['author']}")
+            return data
+    except Exception as e:
+        print(f"❌ Error: {e}")
+
+# Penggunaan
+download_tiktok('https://vt.tiktok.com/ZSCUBjoFb')
+                            </code></pre>
+                        </div>
+
+                        <!-- Dart -->
+                        <div id="dart" class="api-code">
+                            <div class="code-header">
+                                <span class="code-lang">Dart</span>
+                                <button class="copy-code" data-target="dart-code"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <pre><code id="dart-code">
+// Dart - Tambahkan di pubspec.yaml
+// dependencies: http: ^1.1.0
+
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+
+Future<Map<String, dynamic>> downloadTikTok(String url) async {
+    try {
+        final response = await http.get(
+            Uri.parse(
+                'https://ziferr-tiktok-api.vercel.app/api/tiktok?url=${Uri.encodeComponent(url)}'
+            )
+        );
+        
+        if (response.statusCode == 200) {
+            final data = json.decode(response.body);
+            print('✅ Video: ${data['video']}');
+            print('✅ Audio: ${data['audio']}');
+            print('✅ Caption: ${data['caption']}');
+            print('✅ Author: ${data['author']}');
+            return data;
+        }
+    } catch (e) {
+        print('❌ Error: $e');
+    }
+}
+
+// Penggunaan
+void main() {
+    downloadTikTok('https://vt.tiktok.com/ZSCUBjoFb');
+}
+                            </code></pre>
+                        </div>
+
+                        <!-- cURL -->
+                        <div id="curl" class="api-code">
+                            <div class="code-header">
+                                <span class="code-lang">cURL</span>
+                                <button class="copy-code" data-target="curl-code"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <pre><code id="curl-code">
+# cURL - Terminal / Command Line
+
+curl -X GET "https://ziferr-tiktok-api.vercel.app/api/tiktok?url=https://vt.tiktok.com/ZSCUBjoFb"
+
+# Response:
+{
+    "success": true,
+    "video": "https://.../video.mp4",
+    "audio": "https://.../audio.mp3",
+    "caption": "Caption video disini",
+    "author": "@username",
+    "likes": 1234,
+    "comments": 567
+}
+                            </code></pre>
+                        </div>
+
+                        <!-- PHP -->
+                        <div id="php" class="api-code">
+                            <div class="code-header">
+                                <span class="code-lang">PHP</span>
+                                <button class="copy-code" data-target="php-code"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <pre><code id="php-code">
+&lt;?php
+// PHP - Menggunakan cURL
+
+function downloadTikTok($url) {
+    $apiUrl = "https://ziferr-tiktok-api.vercel.app/api/tiktok?url=" . urlencode($url);
+    
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $apiUrl);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+    
+    $response = curl_exec($ch);
+    $error = curl_error($ch);
+    curl_close($ch);
+    
+    if ($error) {
+        die("❌ Error: " . $error);
+    }
+    
+    $data = json_decode($response, true);
+    
+    if ($data['success']) {
+        echo "✅ Video: " . $data['video'] . "\n";
+        echo "✅ Audio: " . $data['audio'] . "\n";
+        echo "✅ Caption: " . $data['caption'] . "\n";
+        echo "✅ Author: " . $data['author'] . "\n";
+        return $data;
+    }
+}
+
+// Penggunaan
+downloadTikTok('https://vt.tiktok.com/ZSCUBjoFb');
+?&gt;
+                            </code></pre>
+                        </div>
+
+                        <!-- Java -->
+                        <div id="java" class="api-code">
+                            <div class="code-header">
+                                <span class="code-lang">Java</span>
+                                <button class="copy-code" data-target="java-code"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <pre><code id="java-code">
+// Java - Menggunakan HttpClient (Java 11+)
+
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+
+public class TikTokDownloader {
+    public static void main(String[] args) throws Exception {
+        String url = "https://vt.tiktok.com/ZSCUBjoFb";
+        String encodedUrl = URLEncoder.encode(url, StandardCharsets.UTF_8);
+        
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+            .uri(URI.create("https://ziferr-tiktok-api.vercel.app/api/tiktok?url=" + encodedUrl))
+            .GET()
+            .build();
+            
+        HttpResponse<String> response = client.send(request, 
+            HttpResponse.BodyHandlers.ofString());
+            
+        System.out.println("Response: " + response.body());
+    }
+}
+                            </code></pre>
+                        </div>
+
+                        <!-- Go -->
+                        <div id="go" class="api-code">
+                            <div class="code-header">
+                                <span class="code-lang">Go</span>
+                                <button class="copy-code" data-target="go-code"><i class="fas fa-copy"></i></button>
+                            </div>
+                            <pre><code id="go-code">
+// Go - Install dengan go get
+// go get -u github.com/go-resty/resty/v2
+
+package main
+
+import (
+    "fmt"
+    "net/url"
+    "github.com/go-resty/resty/v2"
+)
+
+func main() {
+    client := resty.New()
+    
+    url := "https://vt.tiktok.com/ZSCUBjoFb"
+    encodedUrl := url.QueryEscape(url)
+    
+    resp, err := client.R().
+        Get("https://ziferr-tiktok-api.vercel.app/api/tiktok?url=" + encodedUrl)
+    
+    if err != nil {
+        fmt.Println("❌ Error:", err)
+        return
+    }
+    
+    fmt.Println("✅ Response:", resp.String())
+}
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== RESPONSE EXAMPLE ===== -->
+            <div class="response-example">
+                <h3><i class="fas fa-server"></i> API Response Example</h3>
+                <div class="response-code">
+                    <pre><code>
+{
+    "success": true,
+    "video": "https://.../video.mp4",
+    "audio": "https://.../audio.mp3",
+    "caption": "Caption video disini",
+    "author": "@username",
+    "likes": 1234,
+    "comments": 567,
+    "shares": 89,
+    "duration": "00:30"
+}
+                    </code></pre>
+                </div>
+            </div>
+
+            <!-- ===== FOOTER ===== -->
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <i class="fab fa-tiktok"></i>
+                        <span>TikTok Downloader</span>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#"><i class="fas fa-shield-alt"></i> Privacy</a>
+                        <a href="#"><i class="fas fa-file-alt"></i> Terms</a>
+                        <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 TikTok Downloader. Powered by <strong>Zifer API</strong></p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- ===== TOAST ===== -->
+    <div id="toast" class="toast hide">
+        <div class="toast-icon"><i class="fas fa-info-circle"></i></div>
+        <div class="toast-content">
+            <span class="toast-title">Notifikasi</span>
+            <span class="toast-message" id="toastMessage"></span>
+        </div>
+        <button class="toast-close"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="js/api.js"></script>
+    <script src="js/telegram.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
