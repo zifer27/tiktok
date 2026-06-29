@@ -3,7 +3,7 @@
 // ========================================
 
 const API_CONFIG = {
-    baseUrl: 'https://ziferr-tiktok-api.vercel.app',
+    baseUrl: 'https://ziferr-tiktokv1-api.vercel.app',
     endpoints: {
         tiktok: '/api/tiktok'
     },
@@ -60,15 +60,15 @@ async function fetchTikTokData(url) {
                 raw: data
             };
         } else {
-            throw new Error(data.message || 'Gagal mengambil data video');
+            throw new Error(data.message || 'Failed to fetch video data');
         }
 
     } catch (error) {
         if (error.name === 'AbortError') {
-            throw new Error('⏰ Request timeout. Silakan coba lagi.');
+            throw new Error('⏰ Request timeout. Please try again.');
         }
         console.error('❌ API Error:', error);
-        throw new Error(error.message || 'Terjadi kesalahan saat mengambil data');
+        throw new Error(error.message || 'An error occurred while fetching data');
     }
 }
 
@@ -122,7 +122,7 @@ async function fetchTikTokDataWithFallback(url) {
             return fallbackData;
         }
 
-        throw new Error('❌ Gagal memproses video. Periksa URL atau coba lagi nanti.');
+        throw new Error('❌ Failed to process video. Please check the URL or try again later.');
     }
 }
 
