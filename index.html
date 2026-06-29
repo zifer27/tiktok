@@ -6,7 +6,7 @@
     <title>TikTok Downloader Pro - Zifer API</title>
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Radhani&display=swap" rel="stylesheet">
@@ -238,12 +238,12 @@
                         <i class="fas fa-user-circle"></i>
                     </div>
                     <div class="developer-info">
-                        <h3>Zifer Team</h3>
+                        <h3>Zifer Modss</h3>
                         <p class="developer-role">✨ Full Stack Developer & API Architect</p>
                         <p class="developer-desc">
                             Passionate about building powerful tools that make content creation 
                             easier. This TikTok Downloader is built with ❤️ using modern 
-                            technologies including Node.js, Express, and Vercel.
+                            technologies including Node.js, Express, and Backend. 
                         </p>
                         <div class="developer-social">
                             <a href="#"><i class="fab fa-github"></i></a>
@@ -279,7 +279,7 @@
                         <a href="#"><i class="fas fa-star"></i> GitHub</a>
                     </div>
                     <div class="footer-version">
-                        <i class="fas fa-code-branch"></i> v3.0.0
+                        <i class="fas fa-code-branch"></i> v1.0.0
                     </div>
                 </div>
                 <div class="footer-bottom">
@@ -307,7 +307,7 @@
                 </div>
                 <div class="header-badge">
                     <span class="badge"><i class="fas fa-bolt"></i> Pro</span>
-                    <span class="badge version"><i class="fas fa-code-branch"></i> v3.0</span>
+                    <span class="badge version"><i class="fas fa-code-branch"></i> v1.0</span>
                 </div>
                 <div class="header-nav">
                     <button class="nav-back" id="backToWelcome" title="Back to Home">
@@ -448,7 +448,7 @@
                 
                 <div class="api-body" id="apiBody">
                     <div class="api-info">
-                        <p><i class="fas fa-globe"></i> <strong>Base URL:</strong> <code>https://ziferr-tiktok-api.vercel.app</code></p>
+                        <p><i class="fas fa-globe"></i> <strong>Base URL:</strong> <code>https://ziferr-tiktokv1-api.vercel.app</code></p>
                         <p><i class="fas fa-key"></i> <strong>Endpoint:</strong> <code>/api/tiktok?url={URL_TIKTOK}</code></p>
                         <p><i class="fas fa-method"></i> <strong>Method:</strong> <code>GET</code></p>
                     </div>
@@ -479,7 +479,7 @@ const axios = require('axios');
 async function downloadTikTok(url) {
     try {
         const response = await axios.get(
-            'https://ziferr-tiktok-api.vercel.app/api/tiktok',
+            'https://ziferr-tiktokv1-api.vercel.app/api/tiktok',
             { params: { url } }
         );
         
@@ -516,7 +516,7 @@ import requests
 def download_tiktok(url):
     try:
         response = requests.get(
-            'https://ziferr-tiktok-api.vercel.app/api/tiktok',
+            'https://ziferr-tiktokv1-api.vercel.app/api/tiktok',
             params={'url': url}
         )
         data = response.json()
@@ -552,7 +552,7 @@ Future<Map<String, dynamic>> downloadTikTok(String url) async {
     try {
         final response = await http.get(
             Uri.parse(
-                'https://ziferr-tiktok-api.vercel.app/api/tiktok?url=${Uri.encodeComponent(url)}'
+                'https://ziferr-tiktokv1-api.vercel.app/api/tiktok?url=${Uri.encodeComponent(url)}'
             )
         );
         
@@ -585,7 +585,7 @@ void main() {
                             <pre><code id="curl-code">
 # cURL - Terminal / Command Line
 
-curl -X GET "https://ziferr-tiktok-api.vercel.app/api/tiktok?url=https://vt.tiktok.com/ZSCUBjoFb"
+curl -X GET "https://ziferr-tiktokv1-api.vercel.app/api/tiktok?url=https://vt.tiktok.com/ZSCUBjoFb"
 
 # Response:
 {
@@ -611,7 +611,7 @@ curl -X GET "https://ziferr-tiktok-api.vercel.app/api/tiktok?url=https://vt.tikt
 // PHP - Menggunakan cURL
 
 function downloadTikTok($url) {
-    $apiUrl = "https://ziferr-tiktok-api.vercel.app/api/tiktok?url=" . urlencode($url);
+    $apiUrl = "https://ziferr-tiktokv1-api.vercel.app/api/tiktok?url=" . urlencode($url);
     
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $apiUrl);
@@ -667,7 +667,7 @@ public class TikTokDownloader {
         
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-            .uri(URI.create("https://ziferr-tiktok-api.vercel.app/api/tiktok?url=" + encodedUrl))
+            .uri(URI.create("https://ziferr-tiktokv1-api.vercel.app/api/tiktok?url=" + encodedUrl))
             .GET()
             .build();
             
@@ -705,7 +705,7 @@ func main() {
     encodedUrl := url.QueryEscape(url)
     
     resp, err := client.R().
-        Get("https://ziferr-tiktok-api.vercel.app/api/tiktok?url=" + encodedUrl)
+        Get("https://ziferr-tiktokv1-api.vercel.app/api/tiktok?url=" + encodedUrl)
     
     if err != nil {
         fmt.Println("❌ Error:", err)
@@ -754,7 +754,7 @@ func main() {
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2024 TikTok Downloader. Powered by <strong>Zifer API</strong></p>
+                    <p>&copy; 2026 TikTok Downloader. Powered by <strong>Zifer API</strong></p>
                 </div>
             </footer>
         </div>
@@ -771,8 +771,8 @@ func main() {
     </div>
 
     <!-- ===== SCRIPTS ===== -->
-    <script src="js/api.js"></script>
-    <script src="js/telegram.js"></script>
-    <script src="js/script.js"></script>
+    <script src="api.js"></script>
+    <script src="telegram.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
